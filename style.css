@@ -349,6 +349,10 @@ header nav a:hover {
   .hero h2 {
     font-size: 1.5rem;
   }
+  header nav a {
+  margin: 0 5px;
+  font-weight: 500;
+}
 
   .privacy-content {
     padding: 25px 15px;
@@ -365,6 +369,10 @@ header nav a:hover {
   .header-flex h1{
     font-size: 20px;
   }
+  header nav a {
+  margin: 0 5px;
+  font-weight: 500;
+}
   .search-form input {
     width: 100%;
   }
