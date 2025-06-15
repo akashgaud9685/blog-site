@@ -4,96 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="assets/img.jpg" type="image/png">
-  <title>InstantGyan - Blog & Product Review Site</title>
-  <meta name="description" content="InstantGyan is your go-to site for informative blogs and honest product reviews. Learn something new every day.">
-  <meta name="keywords" content="Blogs, Tech Articles, Product Reviews, GK, InstantGyan">
+  <title>InstantGyan - Read, Learn, Grow</title>
+  <meta name="description" content="InstantGyan is your destination for useful blogs on tech, education, and current affairs.">
+  <meta name="keywords" content="Blogs, Learning, Tech, Education, GK, InstantGyan">
   <meta name="author" content="InstantGyan Team">
   <link rel="stylesheet" href="style.css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980473391565775" crossorigin="anonymous"></script>
-  <script async src="https://script.adquake.com/js/adquake.js" adquake-key="ImtasTjYZEaLhVvCmobyrQ=="></script>
 </head>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJBJNMCKK4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XJBJNMCKK4');
-</script>
-
 <body>
+  <!-- Header -->
   <header>
     <div class="container header-flex">
       <h1>
-        <a href="index.html" style="text-decoration: none; color: inherit; font-size: 1.4em; display: flex; align-items: center; gap: 8px;">
-          <span style="font-size: 1em;">📘</span> InstantGyan
+        <a href="index.html" style="text-decoration: none; color: inherit; font-size: 1.5em; display: flex; align-items: center; gap: 8px;">
+          📘 InstantGyan
         </a>
-      </h1>      
+      </h1>
       <nav>
         <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-
-      <!-- Search Bar -->
       <form class="search-form" action="#" method="get">
-        <input type="text" name="query" placeholder="Search blog posts..." style="font-style: italic;" />
+        <input type="text" name="query" placeholder="Search blogs..." />
         <button type="submit">🔍</button>
       </form>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" style="background-color: #eaf4ff; padding: 50px 0; text-align: center;">
     <div class="container">
       <h2>Welcome to InstantGyan</h2>
-      <p>Discover simple, useful, and updated blogs and product reviews on trending topics.</p>
-      <a href="product-reviews/all-reviews.html" class="btn">Explore Product Reviews</a>
+      <p>Daily dose of tech updates, study resources, and smart learning — all in one place.</p>
+      <a href="categories.html" class="btn">Explore Categories</a>
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- Main Blog Layout -->
   <section class="content">
-    <div class="container">
-      <h2>Popular Blog Categories</h2>
-      <div class="categories">
-        <a href="categories/tech.html" class="category-card">Tech</a>
-        <a href="#" class="category-card">Education</a>
-        <a href="#" class="category-card">General Knowledge</a>
+    <div class="container" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
+      
+      <!-- Blog Articles Column -->
+      <div style="flex: 3;">
+        <h2>Latest Posts</h2>
+        
+        <article class="blog-card">
+          <h3><a href="blogs/chatgpt-uses.html">Top 10 Uses of ChatGPT for Students</a></h3>
+          <p>From doubt-solving to content writing, learn how ChatGPT can boost your learning.</p>
+        </article>
+        
+        <article class="blog-card">
+          <h3><a href="blogs/study-hacks.html">5 Study Hacks That Actually Work</a></h3>
+          <p>Struggling to focus? These scientifically backed tips will help you study smarter.</p>
+        </article>
+
+        <article class="blog-card">
+          <h3><a href="blogs/gk-facts.html">Mind-Blowing GK Facts You Didn't Know</a></h3>
+          <p>Boost your general knowledge with these fun and surprising facts.</p>
+        </article>
       </div>
+
+      <!-- Sidebar Column -->
+      <aside style="flex: 1;">
+        <div class="sidebar-section">
+          <h3>📂 Categories</h3>
+          <ul>
+            <li><a href="categories/tech.html">Tech</a></li>
+            <li><a href="categories/education.html">Education</a></li>
+            <li><a href="categories/gk.html">General Knowledge</a></li>
+            <li><a href="product-reviews/all-reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section" style="margin-top: 30px;">
+          <h3>🔥 Trending</h3>
+          <ul>
+            <li><a href="blogs/top-mobile-apps.html">Top 5 Study Apps in 2025</a></li>
+            <li><a href="blogs/exam-tips.html">Exam Preparation Tips</a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- About Blog Section -->
-  <section class="about-info">
-    <div class="container">
-      <h2>What is InstantGyan?</h2>
-      <p><strong>InstantGyan</strong> is your reliable destination for blog posts crafted in beginner-friendly language.</p>
-      <p>We share valuable content on <strong>Technology</strong>, <strong>General Knowledge, News and more</strong>, and we also provide <strong>Product Reviews</strong> — perfect for students, aspirants, and everyday learners.</p>
-      <p>No matter your background — if you're curious, this blog is for you!</p>
-      <p><strong>✓ Simple explanations</strong><br>
-         <strong>✓ Categorized content</strong><br>
-         <strong>✓ Honest product reviews</strong><br>
-         <strong>✓ Clean design, no distractions</strong>
-      </p>
-      <p>Scroll, search, and explore — <strong>your next learning starts here!</strong></p>
+  <!-- Newsletter Section -->
+  <section class="newsletter" style="background: #f1f1f1; padding: 30px 0; margin-top: 40px;">
+    <div class="container" style="text-align: center;">
+      <h2>📬 Subscribe for Updates</h2>
+      <p>Join our email list for new blog posts, tips & updates.</p>
+      <form action="#" method="post" style="margin-top: 15px;">
+        <input type="email" name="email" placeholder="Enter your email" style="padding: 8px; width: 250px; max-width: 90%;">
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 InstantGyan. All rights reserved.</p>
       <div style="margin-top: 10px;">
         <a href="index.html" style="color: white; margin: 0 10px;">Home</a> |
-        <a href="about.html" style="color: white; margin: 0 10px;">About Us</a> |
+        <a href="about.html" style="color: white; margin: 0 10px;">About</a> |
         <a href="contact.html" style="color: white; margin: 0 10px;">Contact</a> |
         <a href="privacy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> |
         <a href="terms.html" style="color: white; margin: 0 10px;">Terms & Conditions</a> |
         <a href="disclaimer.html" style="color: white; margin: 0 10px;">Disclaimer</a>
       </div>
-      <p style="margin-top: 10px;">Built with ❤️ for curious minds.</p>
+      <p style="margin-top: 10px;">Made with ❤️ for curious learners.</p>
     </div>
   </footer>
 </body>
