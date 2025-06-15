@@ -335,7 +335,7 @@ header nav a:hover {
     gap: 10px;
   }
   .header-flex h1{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .search-form {
@@ -362,7 +362,9 @@ header nav a:hover {
     flex-direction: column;
     gap: 10px;
   }
-
+  .header-flex h1{
+    font-size: 20px;
+  }
   .search-form input {
     width: 100%;
   }
