@@ -1,34 +1,28 @@
-/* --------------------- */
-/* RESET AND BASE STYLES */
-/* --------------------- */
-
+/* === Global Styles === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #fff6f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
   color: #333;
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
+  padding: 20px;
 }
 
-/* --------------------- */
-/* HEADER AND NAVIGATION */
-/* --------------------- */
-
+/* === Header === */
 header {
-  padding-top: 20px;
-  margin-bottom: 0;
-  background: linear-gradient(to right, #c0392b, #e74c3c);
+  background-color: #003366;
   color: white;
+  padding: 15px 0;
 }
 
 .header-flex {
@@ -36,476 +30,424 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
 }
 
-header h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 0;
-}
-
-/* --------------------- */
-/* NAVIGATION STYLES */
-/* --------------------- */
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-nav a {
+header nav a {
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.05rem;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+header nav a:hover {
+  color: #ffcc00;
 }
 
-/* Dropdown Menu */
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown > a {
+/* === Search Bar === */
+.search-form {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  color: black;
-  min-width: 160px;
-  top: 100%;
-  left: 0;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-  font-weight: normal;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* --------------------- */
-/* SEARCH BAR */
-/* --------------------- */
-
-.search-form {
-  display: flex;
-  align-items: center;
-  background: white;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 42px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.search-form input[type="text"] {
-  padding: 10px 15px;
+.search-form input {
+  padding: 6px 10px;
   border: none;
-  outline: none;
-  font-size: 1rem;
-  width: 220px;
-  font-style: italic;
+  border-radius: 4px;
+  width: 180px;
 }
 
 .search-form button {
-  background-color: #e74c3c;
-  color: white;
+  background-color: #ffcc00;
   border: none;
-  padding: 10px 15px;
+  padding: 6px 10px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .search-form button:hover {
-  background-color: #ff6b6b;
-  color: black;
+  background-color: #e6b800;
 }
 
-/* --------------------- */
-/* HERO SECTION */
-/* --------------------- */
-
-.hero {
-  background: linear-gradient(to right, #c0392b, #e74c3c);
-  color: white;
-  padding: 10px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
+/* === Hero Section === */
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1em;
   margin-bottom: 20px;
 }
 
 .btn {
-  background-color: #e74c3c;
+  background-color: #003366;
   color: white;
-  padding: 10px 25px;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
   transition: background-color 0.3s ease;
-  display: inline-block;
-  font-weight: bold;
 }
 
 .btn:hover {
-  background-color: #ff6b6b;
-  color: black;
+  background-color: #002244;
 }
 
-/* --------------------- */
-/* MAIN CONTENT */
-/* --------------------- */
-
-.content {
-  padding: 40px 0;
-  background-color: white;
-}
-
-.categories {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.category-card {
-  background-color: #f8d7da;
-  padding: 30px;
-  flex: 1;
-  text-align: center;
+/* === Blog Card === */
+.blog-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #003366;
   border-radius: 8px;
-  font-weight: bold;
-  transition: transform 0.2s ease;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 a {
+  color: #003366;
   text-decoration: none;
-  font-size: 1.1rem;
 }
 
-.category-card:hover {
-  transform: scale(1.05);
-  background-color: #f5b7b1;
+.blog-card h3 a:hover {
+  text-decoration: underline;
 }
 
-/* --------------------- */
-/* ABOUT SECTION */
-/* --------------------- */
-
-.about-info {
-  background-color: #ffeef0;
-  padding: 20px 20px;
-  margin-top: 40px;
-  border-top: 2px solid #f1948a;
+/* === Sidebar === */
+.sidebar-section {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
 }
 
-.about-info h2 {
+.sidebar-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #003366;
+}
+
+.sidebar-section ul {
+  list-style: none;
+}
+
+.sidebar-section ul li {
+  margin: 8px 0;
+}
+
+.sidebar-section ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar-section ul li a:hover {
+  color: #003366;
+}
+
+/* === Newsletter === */
+.newsletter h2 {
+  font-size: 1.5em;
+  color: #003366;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.newsletter .btn {
+  margin-left: 10px;
+}
+
+/* === Footer === */
+footer {
+  background-color: #003366;
+  color: white;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: #c0392b;
+  padding: 30px 0;
+  font-size: 0.9em;
 }
 
-.about-info p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #444;
-  max-width: 900px;
-  margin: 0 auto 20px auto;
-  text-align: left;
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
 }
 
-/* --------------------- */
-/* CONTACT SECTION */
-/* --------------------- */
-
+footer a:hover {
+  text-decoration: underline;
+}
+/* Contact Form */
 .contact-section {
-  padding: 50px 0;
-  background-color: #fff6f6;
-}
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-}
-
-.contact-section p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 35px;
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 20px;
 }
 
 .contact-section form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .contact-section label {
-  font-size: 1rem;
-  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .contact-section input,
 .contact-section textarea {
-  width: 100%;
-  padding: 12px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
-  outline: none;
 }
 
-.contact-section button {
-  background-color: #e74c3c;
+.contact-section .btn {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-section .btn:hover {
+  background-color: #003f88;
+}
+/* ===== General Layout ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Search Form ===== */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  width: 180px;
+}
+
+.search-form button {
+  padding: 8px 10px;
+  background-color: #004494;
   color: white;
   border: none;
-  padding: 10px 25px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.contact-section button:hover {
-  background-color: #ff6b6b;
+/* ===== Hero Section ===== */
+.hero {
+  background-color: #e3f2fd;
+  padding: 60px 20px 30px;
+  text-align: center;
 }
 
-/* --------------------- */
-/* PRIVACY POLICY */
-/* --------------------- */
-
-.privacy-policy {
-  padding: 30px 20px;
-  background-color: white;
+.hero h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #0056b3;
 }
 
-.privacy-policy h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.privacy-policy h3 {
-  font-size: 1.4em;
+/* ===== About Page Content ===== */
+.privacy-content {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
   margin-top: 20px;
-  margin-bottom: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.privacy-policy p,
-.privacy-policy ul li {
-  font-size: 1em;
-  line-height: 1.6;
+.privacy-content h3 {
+  color: #0056b3;
+  margin-top: 25px;
 }
 
-/* --------------------- */
-/* FAQ SECTION */
-/* --------------------- */
-
-.faq-section {
-  padding: 30px 20px;
-  background-color: #f9f9f9;
+.privacy-content p {
+  margin: 10px 0;
 }
 
-.faq {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+.privacy-content ul {
+  padding-left: 20px;
 }
 
-.faq h3 {
-  color: #e74c3c;
+.privacy-content li {
+  margin: 8px 0;
+}
+/* === Category Page Cards === */
+.category-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-left: 5px solid #0056b3;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card h3 {
   margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #0056b3;
 }
 
-.faq p {
+.category-card p {
+  font-size: 0.95em;
   color: #444;
 }
 
-/* --------------------- */
-/* FOOTER */
-/* --------------------- */
-
-footer {
-  background-color: #2d3436;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-  font-size: 1rem;
+.category-card a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
 }
 
-/* --------------------- */
-/* RESPONSIVE STYLES */
-/* --------------------- */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-@media (max-width: 650px) {
-  html {
-    font-size: 111%;
+/* === Category Container Flex Layout === */
+.category-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* === Responsive Cards === */
+@media (max-width: 768px) {
+  .category-card {
+    flex: 1 1 100%;
   }
+}
 
-  .container {
-    width: 95%;
-  }
 
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
   .header-flex {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    gap: 10px;
   }
-
-  header h1 {
-    font-size: 1.4rem;
-    justify-content: center;
-  }
-
-  nav {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  nav a {
-    font-size: 0.95rem;
-    padding: 6px 1px;
-  }
-
-  .search-form {
-    justify-content: center;
-  }
-
-  .search-form input[type="text"],
-  .search-form button {
-    font-size: 0.8rem;
-    padding: 15px 10px;
-  }
-
-  .hero h2 {
+  .header-flex h1{
     font-size: 20px;
   }
 
-  .hero p {
-    font-size: 0.80rem;
-    margin: 10px;
+  .search-form {
+    width: 100%;
   }
 
-  .btn {
-    font-size: 0.9rem;
-    padding: 8px 15px;
+  .search-form input[type="text"] {
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  header nav a {
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+  .privacy-content {
+    padding: 25px 15px;
+  }
+}
+
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header-flex h1{
+    font-size: 20px;
+  }
+  header nav a {
+  margin: 0 5px;
+  font-weight: 500;
+}
+  .search-form input {
+    width: 100%;
   }
 
   .content {
-    padding: 20px 10px;
-  }
-
-  .content h2 {
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .categories {
     flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .category-card {
-    width: 90%;
-    font-size: 1rem;
-    padding: 20px;
-  }
-
-  .about-info h2 {
-    text-align: center;
-    font-size: 1.6rem;
-  }
-
-  .about-info p {
-    text-align: left;
-    font-size: 1rem;
-    padding-left: 10px;
-  }
-
-  .contact-section h2 {
-    font-size: 2rem;
-  }
-
-  .contact-section p {
-    font-size: 1.1rem;
-  }
-
-  .contact-section {
-    text-align: left;
-    padding: 20px 10px;
-  }
-
-  .about-info {
-    text-align: left;
-    padding: 10px 5px;
-  }
-
-  footer {
-    padding: 11px 0;
-    font-size: 0.8rem;
-  }
-
-  .privacy-policy h2 {
-    font-size: 1.6em;
-  }
-
-  .privacy-policy h3 {
-    font-size: 1.2em;
-  }
-
-  .privacy-policy p,
-  .privacy-policy ul li {
-    font-size: 0.9em;
   }
 }
+/* === Responsive === */
+.contact-section {
+    padding: 20px 15px;
+    margin: 20px 10px;
+    box-shadow: none;
+  }
+
+  .contact-section form {
+    flex-direction: column;
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .contact-section .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
