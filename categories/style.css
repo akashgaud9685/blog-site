@@ -366,6 +366,7 @@ header nav a:hover {
   justify-content: center;
 }
 
+
 /* === Responsive Cards === */
 @media (max-width: 768px) {
   .category-card {
