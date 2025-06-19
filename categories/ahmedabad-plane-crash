@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="../assets/img.jpg" type="image/png">
+  <title>InstantGyan - FAQ/Q&A Website</title>
+  <meta name="description" content="InstantGyan is your one-stop platform for FAQs and Q&A on Tech, GK, and Government topics. Explore informative content now.">
+  <meta name="keywords" content="FAQs, Q&A, Tech Questions, GK, Government Info, InstantGyan">
+  <meta name="author" content="InstantGyan Team">
+  <link rel="stylesheet" href="style.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2980473391565775"
+     crossorigin="anonymous"></script>
+  <style>
+    .qa-section {
+      background-color: #f9f9f9;
+      padding: 40px 0;
+    }
+
+    .qa-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #0056b3;
+    }
+
+    .answer {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      line-height: 1.8;
+      font-size: 1.05em;
+      color: #333;
+    }
+
+    @media screen and (max-width: 650px) {
+      .qa-section {
+        padding: 20px 10px;
+      }
+
+      .qa-section h2 {
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      .answer {
+        padding: 18px;
+        font-size: 0.95em;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <h1>
+        <a href="../index.html" style="text-decoration: none; color: inherit; font-size: 1.4em; display: flex; align-items: center; gap: 8px;"> 
+          <span style="font-size: 1em;">📘</span> InstantGyan
+        </a>
+      </h1>      
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./categories.html">categories</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+
+      <form class="search-form" action="#" method="get">
+        <input type="text" name="query" placeholder="Search anything here..." style="font-style: italic;" />
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>🛫 Sky Tragedy: The Complete Story of the Air India Ahmedabad Plane Crash</h2>
+      <p>Here is the full breakdown of the AI171 crash.</p>
+    </div>
+  </section>
+
+  <main class="qa-section">
+    <div class="container">
+      <div class="answer">
+        <p>On <strong>June 12, 2025</strong>, Air India Flight AI171, a Boeing 787 Dreamliner en route from Ahmedabad to London Gatwick, crashed shortly after takeoff, marking the deadliest aviation accident in India in decades and the first fatal crash involving a Dreamliner.</p>
+
+        <h3>✈️ What Happened?</h3>
+        <p>The aircraft took off at 1:38 PM IST and reached only 625 feet in altitude before a double engine failure led to its sudden descent. A distress signal ("MAYDAY") was issued before the aircraft crashed into the BJ Medical College hostel complex in Meghani Nagar, igniting a massive fire.</p>
+
+        <h3>🕏 Casualties: A Nation in Mourning</h3>
+        <ul>
+          <li>🌍 <strong>Onboard:</strong> 242 onboard – 230 passengers and 12 crew. 241 perished.</li>
+          <li>🌟 <strong>Sole Survivor:</strong> Vishwashkumar Ramesh (Seat 11A) miraculously survived.</li>
+          <li>🏩 <strong>Ground Casualties:</strong> 39 people (mainly students) killed, dozens injured.</li>
+        </ul>
+
+        <h3>🕵️‍♂️ The Investigation: Initial Findings</h3>
+        <ul>
+          <li>📦 <strong>Black Boxes:</strong> Retrieved within 28 hours, partially damaged.</li>
+          <li>⚠️ <strong>Engine Status:</strong> Right engine replaced in March 2025; left engine not serviced since 2023.</li>
+          <li>🔧 <strong>RAT Activated:</strong> Ram Air Turbine indicates both engines failed mid-air.</li>
+          <li>👨‍✈️ <strong>Crew:</strong> Capt. Sumeet Sabharwal (8,200 hours) and FO Clive Kunder were in good standing.</li>
+          <li>🤝 <strong>Joint Probe:</strong> Boeing, GE Aerospace, DGCA, and authorities from UK & US are involved.</li>
+        </ul>
+
+        <h3>🚑 Rescue, Response & Regulation</h3>
+        <ul>
+          <li>🛘 <strong>Relief Center:</strong> Air India launched immediate family assistance centers.</li>
+          <li>💸 <strong>Compensation:</strong> ₹25 lakh interim, more under global agreements.</li>
+          <li>🛬 <strong>Fleet Action:</strong> All 33 Air India Dreamliners grounded for checks.</li>
+          <li>✈️ <strong>Flight Impact:</strong> 15% of long-haul routes suspended temporarily.</li>
+          <li>🔍 <strong>Regulation:</strong> DGCA ordered "power assurance checks" nationwide.</li>
+        </ul>
+
+        <h3>📌 Why This Crash Matters</h3>
+        <ul>
+          <li>🚁 First fatal Boeing 787 Dreamliner crash ever recorded globally.</li>
+          <li>🔍 Exposes maintenance gaps and emergency preparedness flaws.</li>
+          <li>🏩 Highlights airport proximity risks to dense urban zones.</li>
+        </ul>
+
+        <h3>🌍 National and Global Reactions</h3>
+        <p>Prime Minister Modi expressed deep sorrow and pledged transparency. Boeing extended condolences and promised full support. Global airlines and regulators are closely monitoring the case, especially those using the same aircraft and engine type.</p>
+
+        <h3>🗓 What's Next?</h3>
+        <ul>
+          <li>📄 Preliminary report expected in 2–3 months.</li>
+          <li>🛫 Possible advisories from FAA, EASA post findings.</li>
+          <li>⚖️ Legal claims being filed under Montreal Convention.</li>
+        </ul>
+
+        <h3>📝 Final Thoughts</h3>
+        <p>This is more than an aviation incident; it’s a devastating human tragedy that leaves behind pain and questions. May this dark chapter lead to renewed focus on safety, training, and technology in global aviation.</p>
+      </div>
+      <a href="./tech.html" class="btn">All Posts</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 InstantGyan. All rights reserved.</p>
+      <div style="margin-top: 10px;">
+        <a href="../index.html" style="color: white; margin: 0 10px;">Home</a> |
+        <a href="../about.html" style="color: white; margin: 0 10px;">About Us</a> |
+        <a href="../contact.html" style="color: white; margin: 0 10px;">Contact</a> |
+        <a href="../privacy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> |
+        <a href="../terms.html" style="color: white; margin: 0 10px;">Terms & Conditions</a> |
+        <a href="../disclaimer.html" style="color: white; margin: 0 10px;">Disclaimer</a>
+      </div>
+      <p style="margin-top: 10px;">Built with ❤️ for knowledge seekers.</p>
+    </div>
+  </footer>
+</body>
+</html>
