@@ -9,34 +9,47 @@
   <meta name="keywords" content="Blogs, Learning, Tech, Education, GK, InstantGyan">
   <meta name="author" content="InstantGyan Team">
   <link rel="stylesheet" href="style.css" />
-</head>
+
   <style>
-.search-form {
-  position: relative;
-}
+    .search-form {
+      position: relative;
+    }
 
-.search-results {
-  position: absolute;
-  top: 100%; /* search input ke just neeche */
-  left: 0;
-  right: 0;
-  background: white;
-  z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
-}
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      z-index: 1000;
+      max-height: 200px;
+      overflow-y: auto;
+    }
 
-.search-results a {
-  display: block;
-  padding: 8px;
-  text-decoration: none;
-  color: #333;
-}
+    .search-results a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #333;
+    }
 
-.search-results a:hover {
-  background-color: #f0f0f0;
-}
+    .search-results a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* 🔁 Blinking animation for Trending links */
+    .blinking a {
+      position: relative;
+      animation: blinkColor 1s infinite;
+    }
+
+    @keyframes blinkColor {
+      0%   { color: inherit; }  /* original color */
+      50%  { color: red; }      /* blink red */
+      100% { color: inherit; }  /* back to original */
+    }
   </style>
+</head>
 
 <body>
   <!-- Header -->
@@ -54,10 +67,9 @@
         <a href="contact.html">Contact</a>
       </nav>
       <form class="search-form" action="#" method="get" style="position: relative;">
-          <input type="text" name="query" placeholder="Search blogs..." autocomplete="off" />
-          <button type="submit">🔍</button>
+        <input type="text" name="query" placeholder="Search blogs..." autocomplete="off" />
+        <button type="submit">🔍</button>
       </form>
-
     </div>
   </header>
 
@@ -78,7 +90,7 @@
         <h2>Latest Blogs</h2>
         
         <article class="blog-card">
-          <h3><a href="categories/What-is-cloud-computing.html">What is cloud computing?</a></h3>
+          <h3><a href="categories/ahmedabad-plane-crash.html">Ahmedabad Plane Crash: Full Story of Air India AI171 Tragedy</a></h3>
         </article>
         
         <article class="blog-card">
@@ -102,10 +114,10 @@
           </ul>
         </div>
 
-        <div class="sidebar-section" style="margin-top: 30px;">
+        <div class="sidebar-section blinking" style="margin-top: 30px;">
           <h3>🔥 Trending</h3>
           <ul>
-            <li><a href="blogs/top-mobile-apps.html">Top 5 Study Apps in 2025</a></li>
+            <li><a href="categories/ahmedabad-plane-crash.html">Ahmedabad Plane Crash.</a></li>
             <li><a href="blogs/exam-tips.html">Exam Preparation Tips</a></li>
           </ul>
         </div>
