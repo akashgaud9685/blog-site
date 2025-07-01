@@ -1,12 +1,12 @@
 const blogData = [
-  { title: "What is cloud computing?", url: "categories/What-is-cloud-computing.html" },
-  { title: "What is AI?", url: "categories/what-is-ai.html" },
-  { title: "What are the components of computer?", url: "categories/What-are-the-components-of-a-computer.html" },
-  { title: "time management tips for students.", url: "categories/time-management-tips.html" },
-  { title: "ahmedabad plane crash full details.", url: "categories/ahmedabad-plane-crash.html" },
-  { title: "what is the difference between college and university.", url: "categories/difference-between-college-and-university.html" },
-  { title: "sitare zameen par relesed", url: "categories/sitare-zameen-par.html"},
-  { title: "india's important freedom fighters.", url: "categories/gk/important-freedom-fighters.html"},
+  { title: "What is cloud computing?", url: "../categories/What-is-cloud-computing.html" },
+  { title: "What is AI?", url: "../categories/what-is-ai.html" },
+  { title: "What are the components of computer?", url: "../categories/What-are-the-components-of-a-computer.html" },
+  { title: "time management tips for students.", url: "../categories/time-management-tips.html" },
+  { title: "ahmedabad plane crash full details.", url: "../categories/ahmedabad-plane-crash.html" },
+  { title: "what is the difference between college and university.", url: "../categories/difference-between-college-and-university.html" },
+  { title: "sitare zameen par relesed", url: "../categories/sitare-zameen-par.html"},
+  { title: "india's important freedom fighters.", url: "../categories/gk/important-freedom-fighters.html"},
 ];
 
 const searchInput = document.querySelector('.search-form input');

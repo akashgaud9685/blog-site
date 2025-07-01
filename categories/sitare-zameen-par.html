@@ -65,6 +65,43 @@
         line-height: 1.5;
       }
     }
+        .search-form {
+      position: relative;
+    }
+
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      z-index: 1000;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .search-results a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .search-results a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* 🔁 Blinking animation for Trending links */
+    .blinking a {
+      position: relative;
+      animation: blinkColor 1s infinite;
+    }
+
+    @keyframes blinkColor {
+      0%   { color: inherit; }  /* original color */
+      50%  { color: red; }      /* blink red */
+      100% { color: inherit; }  /* back to original */
+    }
   </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -90,8 +127,8 @@
         <a href="../about.html">About</a>
         <a href="../contact.html">Contact</a>
       </nav>
-      <form class="search-form" action="#" method="get">
-        <input type="text" name="query" placeholder="Search anything here..." style="font-style: italic;" />
+      <form class="search-form" action="#" method="get" style="position: relative;">
+        <input type="text" name="query" placeholder="Search blogs..." autocomplete="off" />
         <button type="submit">🔍</button>
       </form>
     </div>
@@ -156,5 +193,6 @@
       <p style="margin-top: 10px;">Built with ❤️ for knowledge seekers.</p>
     </div>
   </footer>
+    <script src="./search_1.js"></script>
 </body>
 </html>
